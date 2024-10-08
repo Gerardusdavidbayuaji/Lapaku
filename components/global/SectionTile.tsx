@@ -1,7 +1,14 @@
-import React from "react";
+import { Separator } from "@/components/ui/separator";
 
-function SectionTile() {
-  return <div>SectionTile</div>;
+function SectionTile({ text }: { text: string }) {
+  return (
+    <div>
+      <h2 className=" text-3xl font-medium tracking-wider capitalize mb-8">
+        {text}
+      </h2>
+      <Separator />
+    </div>
+  );
 }
 
 export default SectionTile;
