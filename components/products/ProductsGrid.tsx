@@ -7,7 +7,7 @@ import FavoriteToggleButton from "./FavoriteToggleButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { formatCurrency } from "@/utils/format";
 
-function ProductsGrid({ products }: { products: Product[] }) {
+function ProductsList({ products }: { products: Product[] }) {
   return (
     <div className="pt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       {products.map((product) => {
@@ -49,4 +49,4 @@ function ProductsGrid({ products }: { products: Product[] }) {
   );
 }
 
-export default ProductsGrid;
+export default ProductsList;
