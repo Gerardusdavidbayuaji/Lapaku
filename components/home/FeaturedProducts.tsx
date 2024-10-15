@@ -1,8 +1,8 @@
 import { fetchFeaturedProducts } from "@/utils/actions";
 
 import ProductsGrid from "@/components/products/ProductsGrid";
-import SectionTile from "@/components/global/SectionTile";
 import EmptyList from "@/components/global/EmptyList";
+import SectionTitle from "@/components/global/SectionTitle";
 
 async function FeaturedProducts() {
   const products = await fetchFeaturedProducts();
@@ -10,7 +10,7 @@ async function FeaturedProducts() {
 
   return (
     <section className="pt-20">
-      <SectionTile text="featured products" />
+      <SectionTitle text="featured products" />
       <ProductsGrid products={products} />
     </section>
   );
